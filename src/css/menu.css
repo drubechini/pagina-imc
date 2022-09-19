@@ -1,0 +1,89 @@
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+    opacity: 0;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: white;
+    transition: 0.3s ease-in-out;
+}
+
+label span:nth-child(1){
+    top:0;
+}
+
+label span:nth-child(2){
+    top:8px;
+}
+
+label span:nth-child(3){
+    top:16px;
+}
+
+
+/*Quando clicar */
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top: 8px; 
+    }
+    
+    @media(max-width:800px){
+        nav {
+            align-items:flex-end;
+            display: flex;
+            flex-direction:column;
+            padding: 30px;
+            position: absolute;
+            top: 8px;
+            right: 0;
+            z-index: 1;
+         }
+    
+
+    nav ul{
+        display: none;
+        width: 250px;
+        background-color: white;
+        padding: 20px;
+    }
+
+    input:checked ~ ul{
+        display: block;
+    }
+
+    label{
+        opacity: 1;
+    }
+
+    nav ul a{
+        text-align: center;
+        display: block;
+        padding: 20px;
+        font-size: 2.8rem;
+    }
+   
+}
+

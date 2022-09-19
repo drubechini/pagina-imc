@@ -1,0 +1,161 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    display: flex;
+    font-size: 3rem;
+    justify-content: flex-end;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    padding: 20px;
+}
+
+ul li a {
+    margin-right: 20px;
+    color: #3A63F4;
+}
+
+ul li a:hover {
+    background-color: #3A63F4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.capa {
+    background-image: url("../images/weight-loss-scale-with-centimeter-top-view.jpg");
+    background-size: cover;
+    height: 89vh;
+    background-position: center;
+}
+
+
+.imc {
+    padding: 100px;
+}
+
+.texto-imc {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 50px;
+}
+
+h2 {
+    color: #3759CF;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #3759CF;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.titulo-classificacao-imc {
+    color: white;
+}
+
+.classificacao-imc {
+    background-color: #3759CF;
+    padding: 50px;
+}
+
+.fonte {
+    padding-right: 50px;
+}
+
+table {
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+th {
+    background-color: #8897BA;
+    color: #3759CF;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.8rem;
+}
+
+td {
+    background-color: #DDD7E0;
+    color: #3759CF;
+    padding: 10px;
+}
+
+.calcule-imc {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+.texto-calcula {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #3A63F4;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.btn-calcula {
+    background-color: #3759CF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-calcula:hover {
+    background-color: #7E95E8;
+}
+
+
+#resultado,
+#texto {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #3759CF;
+}
+
+.subir-tela {
+    background-color: #7E95E8;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    background-image: url("../images/flecha\ b.png");
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desenvolvido {
+    text-align: center;
+    margin-bottom: 20px;
+}
